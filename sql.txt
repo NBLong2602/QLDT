@@ -1,0 +1,4 @@
+//select id_user of teacher's course 
+SELECT user_info.id_user ,user_info.name, course.tenCourse
+from user_info,course,course_status,teacher
+where user_info.id_user = course_status.id_user and course.maCourse = course_status.maCourse and course.teacherName = teacher.fullname and teacher.fullname = 'Johny Dang'  and course.tenCourse = 'Cach debugg trong java'
